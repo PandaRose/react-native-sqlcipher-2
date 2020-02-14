@@ -1,6 +1,11 @@
 #import "RNSqlite2.h"
 #import "sqlite3.h"
 
+int sqlite3_key(
+  struct sqlite3 *db,                   /* Database to be rekeyed */
+  const void *pKey, int nKey     /* The key */
+);
+
 @implementation RNSqlite2
 
 @synthesize cachedDatabases;
